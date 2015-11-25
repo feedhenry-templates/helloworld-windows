@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="helloworld_windows.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:helloworld_windows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border BorderThickness="0">
+            <Border.Background>
+                <SolidColorBrush Color="Red"/>
+            </Border.Background>
+            <TextBlock Text="Quickstart HelloWorld" FontSize="20" Margin="16,10,0,10" Foreground="White"/>
+        </Border>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="10">
+            <TextBlock Margin="0,10" Text="This is a basic App that can take in your name, send it to a cloud app and display the response."/>
+            <TextBox Name="HelloTo" PlaceholderText="Your name"/>
+            <Button Margin="0,10" HorizontalAlignment="Center" Click="SayHello">Say Hello</Button>
+            <TextBlock Name="Response" HorizontalAlignment="Center" Margin="20"/>
+        </StackPanel>
+    </Grid>
+</Page>
