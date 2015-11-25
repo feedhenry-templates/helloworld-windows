@@ -16,6 +16,7 @@ namespace helloworld_windows
     public sealed partial class MainPage : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public bool Enabled { get; set; }
 
         public MainPage()
         {
@@ -26,30 +27,31 @@ namespace helloworld_windows
 
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            await FHClient.Init();
+            Enabled = await FHClient.Init();
+            FirePropertyChanged("Enabled");
         }
 
         private async void SayHello(object sender, RoutedEventArgs e)
         {
             Response.Text = "Calling Cloud.....";
-            FirePropertyChanged();
-            var response = FH.Cloud("hello", "GET", null, new Dictionary<string, string>() {{"hello", HelloTo.Text}});
-            if (!response.IsFaulted)
+            FirePropertyChanged("Response");
+            var response = await FH.Cloud("hello", "GET", null, new Dictionary<string, string>() {{"hello", HelloTo.Text}});
+            if (response.Error == null)
             {
-                Response.Text = response.Result.RawResponse;
-                FirePropertyChanged();
+                Response.Text = (string) response.GetResponseAsDictionary()["msg"];
+                FirePropertyChanged("Response");
             }
             else
             {
-                await new MessageDialog(response.Exception.Message).ShowAsync();
+                await new MessageDialog(response.Error.Message).ShowAsync();
             }
         }
 
-        private void FirePropertyChanged()
+        private void FirePropertyChanged(string name)
         {
             if (PropertyChanged != null)
             {
-                PropertyChanged(this, new PropertyChangedEventArgs("Response"));
+                PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
     }

@@ -21,7 +21,7 @@
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="10">
             <TextBlock Margin="0,10" Text="This is a basic App that can take in your name, send it to a cloud app and display the response."/>
             <TextBox Name="HelloTo" PlaceholderText="Your name"/>
-            <Button Margin="0,10" HorizontalAlignment="Center" Click="SayHello">Say Hello</Button>
+            <Button Margin="0,10" HorizontalAlignment="Center" Click="SayHello" IsEnabled="{Binding Enabled}">Say Hello</Button>
             <TextBlock Name="Response" HorizontalAlignment="Center" Margin="20"/>
         </StackPanel>
     </Grid>
