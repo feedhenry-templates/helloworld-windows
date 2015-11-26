@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/lrlv2l28en4saq7e?svg=true)](https://ci.appveyor.com/project/edewit/helloworld-windows)
+
 helloworld-windows: Basic Windows Mobile Hello World App
 ========================================================
 Author: Erik Jan de Wit (edewit)
