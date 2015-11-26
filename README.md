@@ -26,8 +26,6 @@ Open the HelloWorld Visual Studio project and build
 Build and Deploy the HelloWorld
 -------------------------------
 
-## Change fhconfig.json 
-
 fhconfig.json will be automaticly filled if build / created from the platform if you use this manually you'll have to update the configuration
 
 Application Flow
