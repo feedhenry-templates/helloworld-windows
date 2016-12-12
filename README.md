@@ -23,7 +23,9 @@ Visual Studio 2015 or 2013
 Build and Install
 -----------------
 
-Open the HelloWorld Visual Studio project and build
+Open the HelloWorld Visual Studio project and build.
+
+> Note: Temporary dev certificate expired every year. To renew it follow [VisualStudio instructions](https://msdn.microsoft.com/en-us/library/windows/apps/br230260(v=vs.110).aspx).
 
 Build and Deploy the HelloWorld
 -------------------------------
