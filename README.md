@@ -4,7 +4,7 @@ helloworld-windows: Basic Windows Mobile Hello World App
 ========================================================
 Author: Erik Jan de Wit (edewit)
 Level: Beginner  
-Technologies: Windows Phone
+Technologies: Windows
 Summary: A basic example of the Platform : Send your name and get a Hello <name> response
 Target Product: Mobile  
 Product Versions: MP 1.0   
