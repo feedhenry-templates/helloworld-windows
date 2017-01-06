@@ -9,13 +9,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "helloworld-windows.Shared",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld-windows.Windows", "helloworld-windows\helloworld-windows.Windows\helloworld-windows.Windows.csproj", "{8C2515EC-A377-41C3-AE3B-4EBC18C8EDAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld-windows.WindowsPhone", "helloworld-windows\helloworld-windows.WindowsPhone\helloworld-windows.WindowsPhone.csproj", "{3BF11013-3AFF-42FB-AC0A-8E696A416069}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "helloworld-windows.Universal", "helloworld-windows\helloworld-windows.Universal\helloworld-windows.Universal.csproj", "{B3521260-3D48-4F00-91C5-4FB6FC8EBCBB}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		helloworld-windows\helloworld-windows.Shared\helloworld-windows.Shared.projitems*{3bf11013-3aff-42fb-ac0a-8e696a416069}*SharedItemsImports = 4
 		helloworld-windows\helloworld-windows.Shared\helloworld-windows.Shared.projitems*{b3521260-3d48-4f00-91c5-4fb6fc8ebcbb}*SharedItemsImports = 4
 		helloworld-windows\helloworld-windows.Shared\helloworld-windows.Shared.projitems*{4ad17b7e-5b42-4f7e-8231-1ab68f2942b8}*SharedItemsImports = 13
 		helloworld-windows\helloworld-windows.Shared\helloworld-windows.Shared.projitems*{8c2515ec-a377-41c3-ae3b-4ebc18c8edad}*SharedItemsImports = 4
@@ -55,30 +52,6 @@ Global
 		{8C2515EC-A377-41C3-AE3B-4EBC18C8EDAD}.Release|x86.ActiveCfg = Release|x86
 		{8C2515EC-A377-41C3-AE3B-4EBC18C8EDAD}.Release|x86.Build.0 = Release|x86
 		{8C2515EC-A377-41C3-AE3B-4EBC18C8EDAD}.Release|x86.Deploy.0 = Release|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|ARM.ActiveCfg = Debug|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|ARM.Build.0 = Debug|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|ARM.Deploy.0 = Debug|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x64.Build.0 = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x64.Deploy.0 = Debug|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x86.ActiveCfg = Debug|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x86.Build.0 = Debug|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Debug|x86.Deploy.0 = Debug|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|ARM.ActiveCfg = Release|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|ARM.Build.0 = Release|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|ARM.Deploy.0 = Release|ARM
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x64.ActiveCfg = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x64.Build.0 = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x64.Deploy.0 = Release|Any CPU
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x86.ActiveCfg = Release|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x86.Build.0 = Release|x86
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069}.Release|x86.Deploy.0 = Release|x86
 		{B3521260-3D48-4F00-91C5-4FB6FC8EBCBB}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{B3521260-3D48-4F00-91C5-4FB6FC8EBCBB}.Debug|ARM.ActiveCfg = Debug|ARM
 		{B3521260-3D48-4F00-91C5-4FB6FC8EBCBB}.Debug|ARM.Build.0 = Debug|ARM
@@ -106,7 +79,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{4AD17B7E-5B42-4F7E-8231-1AB68F2942B8} = {37465243-0BB6-4949-9FE5-654BCBFA8F8F}
 		{8C2515EC-A377-41C3-AE3B-4EBC18C8EDAD} = {37465243-0BB6-4949-9FE5-654BCBFA8F8F}
-		{3BF11013-3AFF-42FB-AC0A-8E696A416069} = {37465243-0BB6-4949-9FE5-654BCBFA8F8F}
 		{B3521260-3D48-4F00-91C5-4FB6FC8EBCBB} = {37465243-0BB6-4949-9FE5-654BCBFA8F8F}
 	EndGlobalSection
 EndGlobal
